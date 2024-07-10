@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="userdashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>CAR<span style="color: rgb(53, 53, 122);">PARK</span></h2>
+        <ul>
+            <li><a href="userdahboard.html" style="background-color:#262C36 ;">Dashboard</a></li>
+            <li><a href="view_vehicle.html">View Vehicle</a></li>
+            <li><a href="update_profile.html">Update Profile</a></li>
+            <li><a href="change_password.html">Change Password</a></li>
+        </ul>
+    </div>
+    <div class="content">
+          
+<main>
+    <section id="card">
+        <h2>Welcome to your Dashboard!</h2>
+        <p>"Effortless Parking, One Spot at a Time"</p>
+    </section>
+</main>
+
+
+<section class="box">
+    <div class="box-left">
+      <h2>This Month</h2>
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      
+<script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+    </script>
+    </div>
+    <div class="box-right" id="meh">
+      <h1>Title</h1>
+      <div class="text">
+          <h3>Subtitle</h3>
+          <hr />
+          <p>
+            Payment terminals and mobile apps offer convenient payment options, allowing for contactless transactions and pre-booking capabilities. Additionally, the system might include accessible parking spaces for individuals with disabilities.
+          </p>
+      </div>
+      <div class="text">
+          <h3>Subtitle</h3>
+          <hr />
+          <p>
+            Managed by a sophisticated parking management system (PMS), the facility ensures efficient operations, optimal occupancy rates, and revenue control, enhancing the overall convenience and security for users.
+          </p>
+      </div>
+      <!-- <a href="#">Read More</a> -->
+    </div>
+  </section>
+
+  <main class="footer">
+    <section id="card">
+        <h2>CarPark</h2>
+        <p>©2024 All rights reserved</p>
+    </section>
+    
+</main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.dashboard {
+  float: left;
+  width: 250px;
+  height: 100%;
+  background-color: #191D23;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0px 20px 0px 0px;
+}
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.dashboard h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+.dashboard ul li a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #B8C0CC;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  background-color: #191D23;
+}
+
+.dashboard ul li a:hover {
+  background-color: #262C36;
+}
+
+.main-content {
+  margin-left: 90px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.default-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}

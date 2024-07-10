@@ -1,0 +1,154 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color:white;
+}
+
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+#card{
+    background-color:#191D23;
+    padding:30px;
+    border-radius:20px;
+    color:#ddd;
+
+}
+#card h2{
+    color:#ddd;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 30px;
+}
+.box-left{
+    width: 60%;
+    height: 45vh;
+    margin: 1px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-right{
+    width: 40%;
+    height: 45vh;
+    margin: 1px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-left, .box-right{
+    background-color: #191D23;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.text a{
+    text-decoration: none;
+    float: right;
+    color: #051c3e;
+    font-size: 1rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-left,
+.box-right {
+    width: 48%;
+}
+
+.footer{
+    margin: 30px 20px;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .box-left,
+    .box-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

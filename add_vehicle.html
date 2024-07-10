@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle</title>
+    <link rel="stylesheet" href="add_vehicle.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Add Vehicle</h2>
+        <form action="add_vehicle.php" method="POST">
+            <div class="ownersname">
+                <div class="form-top">
+                    <label for="ownerName">Owner's Name:</label>
+                    <input type="text" id="ownerName" name="ownerName" required><br><br>
+                </div>
+            </div>
+            <div class="cardetails">
+                <div class="form-left">
+                    <label for="licensePlate">License Plate:</label>
+                    <input type="text" id="licensePlate" name="licensePlate" required><br><br>
+
+                    <label for="vehicleType">Type of Vehicle:</label>
+                    <input type="text" id="vehicleType" name="vehicleType" required><br><br>
+
+                    <label for="manufacturedCountry">Country of Manufacture:</label>
+                    <input type="text" id="manufacturedCountry" name="manufacturedCountry" required><br><br>
+                </div>
+                <div class="form-right">
+                    <label for="entryTime">Entry Time:</label>
+                    <input type="datetime-local" id="entryTime" name="entryTime" required><br><br>
+
+                    <label for="exitTime">Exit Time:</label>
+                    <input type="datetime-local" id="exitTime" name="exitTime" value="2000-01-01T00:00" required><br><br>
+
+                    <label for="parkingCharge">Parking Charge:</label>
+                    <input type="number" id="parkingCharge" name="parkingCharge" step="0.01" required><br><br>
+                </div>
+            </div>
+            <button type="submit">Add Vehicle</button>
+        </form>
+     </div>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="admin_dashboard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body style="color: white">
+    <header>
+      <section class="header">
+        <div class="box-top"></div>
+      </section>
+    </header>
+
+    <main>
+      <div class="heading">
+        <h1>Dashboard</h1>
+        <p>Dashboard / Home</p>
+      </div>
+      <div class="cards">
+        <section class="card">
+            <div class="card-text">
+                <h2>40</h2>
+                <p>Available Spaces</p>
+            </div>
+            <span class="material-symbols-outlined">
+                workspaces
+                </span>
+        </section>
+        <section class="card">
+            <div class="card-text">
+                <h2>12</h2>
+                <p>Occupied Spaces</p>
+            </div>
+            <span class="material-symbols-outlined">
+                directions_car
+                </span>
+        </section>
+        <section class="card">
+            <div class="card-text">
+                <h2>400$</h2>
+                <p>Revenue</p>
+            </div>
+            <span class="material-symbols-outlined">
+                account_balance
+                </span>
+        </section>
+        <section class="card">
+            <div class="card-text">
+                <h2>23</h2>
+                 <p>Registered users</p>
+            </div>
+           <span class="material-symbols-outlined">
+            person
+            </span>
+        </section>
+      </div>
+    </main>
+
+    <section class="box">
+      <div class="box-left">
+        <h2>This Month</h2>
+        <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+
+        <script>
+          const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+          const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+          new Chart("myChart", {
+            type: "line",
+            data: {
+              labels: xValues,
+              datasets: [
+                {
+                  fill: false,
+                  lineTension: 0,
+                  backgroundColor: "rgba(0,0,255,1.0)",
+                  borderColor: "rgba(0,0,255,0.1)",
+                  data: yValues,
+                },
+              ],
+            },
+            options: {
+              legend: { display: false },
+              scales: {
+                yAxes: [{ ticks: { min: 6, max: 16 } }],
+              },
+            },
+          });
+        </script>
+      </div>
+      <div class="box-right">
+        <h1>Title</h1>
+        <div class="text">
+            <h3>Subtitle</h3>
+            <hr />
+            <p>
+              A modern parking system integrates advanced technology and user-friendly features to streamline the parking experience. Upon entering the parking facility, drivers encounter a barrier gate and a ticket dispenser that issues a time-stamped ticket or, alternatively, uses license plate recognition (LPR) to log their entry automatically.
+            </p>
+        </div>
+        <div class="text">
+            <h3>Subtitle</h3>
+            <hr />
+            <p>
+             Digital signs and a parking guidance system (PGS) direct drivers to available spaces, reducing the time spent searching for a spot. The facility is equipped with security cameras to ensure safety and may include EV charging stations for electric vehicles.
+            </p>
+        </div>
+        <!-- <a href="#">Read More</a> -->
+      </div>
+    </section>
+  </body>
+</html>
